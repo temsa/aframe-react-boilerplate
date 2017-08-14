@@ -1,10 +1,12 @@
 import 'aframe';
 import 'aframe-animation-component';
 import 'aframe-particle-system-component';
+import 'aframe-effects';
 import 'babel-polyfill';
 import {Entity, Scene} from 'aframe-react';
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -21,7 +23,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <Scene>
+      <Scene effects="bloom, fxaa" bloom="radius: 0.66" fxaa>
         <a-assets>
           <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
           <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
