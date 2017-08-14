@@ -23,7 +23,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <Scene effects="bloom, fxaa" bloom="radius: 0.66" fxaa>
+      <Scene  effects="outline" outline="enabled: true; width: 1.33 1.33; range: 0 10; strength: 3; smooth: true;" >
         <a-assets>
           <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg"/>
           <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"/>
